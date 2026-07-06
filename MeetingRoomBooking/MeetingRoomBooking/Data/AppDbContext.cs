@@ -12,7 +12,13 @@ namespace MeetingRoomBooking.Data
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Booking> Bookings { get; set; }
 
-        
-        
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Booking>()
+                .Property(x => x.Status)
+                .HasConversion<string>();
+        }
     }
 }

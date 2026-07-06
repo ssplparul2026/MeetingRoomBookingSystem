@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\viewmodels\\mybookingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\viewmodels\\mybookingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\services\\implementations\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\services\\implementations\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\services\\implementations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\services\\implementations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\services\\interfaces\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\services\\interfaces\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\services\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\services\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\viewmodels\\roombookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\viewmodels\\roombookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\viewmodels\\roomviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\viewmodels\\roomviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Migrations\\20260704063120_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MeetingRoomBooking\\Migrations\\20260704063120_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +63,12 @@
       "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\enum\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\enum\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|c:\\meetingroombookingsystem\\meetingroombooking\\meetingroombooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8ACDDBF-D910-4303-958B-620B7C6784BC}|MeetingRoomBooking\\MeetingRoomBooking.csproj|solutionrelative:meetingroombooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +78,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "RoomBookingViewModel.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\RoomBookingViewModel.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\ViewModels\\RoomBookingViewModel.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\RoomBookingViewModel.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\ViewModels\\RoomBookingViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:41:08.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyBookingsViewModel.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\MyBookingsViewModel.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\ViewModels\\MyBookingsViewModel.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\MyBookingsViewModel.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\ViewModels\\MyBookingsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:40:38.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoomViewModel.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\RoomViewModel.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\ViewModels\\RoomViewModel.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\RoomViewModel.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\ViewModels\\RoomViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:40:14.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookingViewModel.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\BookingViewModel.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\ViewModels\\BookingViewModel.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\ViewModels\\BookingViewModel.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\ViewModels\\BookingViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:39:54.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Implementations\\RoomService.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\Services\\Implementations\\RoomService.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Implementations\\RoomService.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\Services\\Implementations\\RoomService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:37:07.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Implementations\\BookingService.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\Services\\Implementations\\BookingService.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Implementations\\BookingService.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\Services\\Implementations\\BookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:36:26.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRoomService.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Interfaces\\IRoomService.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\Services\\Interfaces\\IRoomService.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Interfaces\\IRoomService.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\Services\\Interfaces\\IRoomService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:35:48.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Interfaces\\IBookingService.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\Services\\Interfaces\\IBookingService.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Services\\Interfaces\\IBookingService.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\Services\\Interfaces\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:35:31.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:34:14.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "MeetingRoomBooking\\Controllers\\RoomController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T06:33:48.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "20260704063120_dbinit.cs",
               "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Migrations\\20260704063120_dbinit.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking\\Migrations\\20260704063120_dbinit.cs",
               "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Migrations\\20260704063120_dbinit.cs",
               "RelativeToolTip": "MeetingRoomBooking\\Migrations\\20260704063120_dbinit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-04T06:31:20.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\appsettings.json",
               "RelativeDocumentMoniker": "MeetingRoomBooking\\appsettings.json",
@@ -68,20 +238,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Program.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking\\Program.cs",
               "ToolTip": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Program.cs",
               "RelativeToolTip": "MeetingRoomBooking\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-04T06:22:54.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "Booking.cs",
               "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking\\Models\\Booking.cs",
@@ -94,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Models\\Room.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking\\Models\\Room.cs",
@@ -107,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking\\Data\\AppDbContext.cs",
@@ -120,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "BookingStatus.cs",
               "DocumentMoniker": "C:\\MeetingRoomBookingSystem\\MeetingRoomBooking\\MeetingRoomBooking\\Enum\\BookingStatus.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking\\Enum\\BookingStatus.cs",
