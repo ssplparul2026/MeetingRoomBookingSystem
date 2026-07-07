@@ -8,7 +8,6 @@ namespace MeetingRoomBooking.Services.Interfaces
         Task<List<Booking>> GetBookingByDate(DateOnly date);
         Task<List<Booking>> GetMyBookings(string bookedBy);
         Task<Booking?> HasConflict(Booking booking);
-        bool IsOverlapping(Booking existingBooking, Booking newBooking);
         Task<bool> CancelBooking(int bookingId);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MeetingRoomBooking.Data;
 using MeetingRoomBooking.Enum;
+using MeetingRoomBooking.Helpers;
 using MeetingRoomBooking.Models;
 using MeetingRoomBooking.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -13,15 +14,12 @@ namespace MeetingRoomBooking.Services.Implementations
         {
             _appDbContext = appDbContext;
         }
-        public bool IsOverlapping(Booking existingBooking, Booking newBooking)
-        {
-            return newBooking.StartTime < existingBooking.EndTime && newBooking.EndTime > existingBooking.StartTime;
-        }
+        
         public async Task<Booking?> HasConflict(Booking booking)
         {
             var bookings = await _appDbContext.Bookings.Where(x => x.RoomId == booking.RoomId && x.BookingDate == booking.BookingDate
                 && x.Status == BookingStatus.Active) .ToListAsync();
-            return bookings.FirstOrDefault(x => IsOverlapping(x, booking));
+            return bookings.FirstOrDefault(x => BookingOverlapHelper.IsOverlapping(x, booking));
         }
                 
        
