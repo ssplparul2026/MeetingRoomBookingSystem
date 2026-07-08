@@ -19,6 +19,14 @@ The following components have been completed:
 - Service layer implementation
 - Booking overlap validation logic
 - Unit testing project setup and tested edge cases
+- Controllers implementation
+- Room Booking Details page
+- Navigation bar with:
+  - Home
+  - Rooms
+  - My Bookings
+  - Create Booking
+- Date selection for room bookings using jQuery UI DatePicker
  
 
 
@@ -32,7 +40,7 @@ MeetingRoomBookingSystem
 ├── Helpers
 ├── Migrations
 ├── Views (In Progress)
-├── Controllers (In Progress)
+├── Controllers (Completed)
 ├── wwwroot
 ├── Program.cs
 └── appsettings.json

@@ -57,8 +57,8 @@ namespace MeetingRoomBooking.Tests
             };
             var newBooking = new Booking
             {
-                StartTime = new TimeOnly(10, 0),
-                EndTime = new TimeOnly(11, 0)
+                StartTime = new TimeOnly(10, 15),
+                EndTime = new TimeOnly(11, 15)
             };
             bool result = BookingOverlapHelper.IsOverlapping(existingBooking, newBooking);
             Assert.True(result);
@@ -196,6 +196,22 @@ namespace MeetingRoomBooking.Tests
             Assert.True(result);
         }
         [Fact]
+        public void OneMinute_ShouldReturnFalse()
+        {
+            var existingBooking = new Booking
+            {
+                StartTime = new TimeOnly(0, 0),
+                EndTime = new TimeOnly(23, 59)
+            };
+            var newBooking = new Booking
+            {
+                StartTime = new TimeOnly(23, 59),
+                EndTime = new TimeOnly(0, 0)
+            };
+            bool result = BookingOverlapHelper.IsOverlapping(existingBooking, newBooking);
+            Assert.False(result);
+        }
+        [Fact]
         public void AllDay_ShouldReturnTrue()
         {
             var existingBooking = new Booking
@@ -227,5 +243,6 @@ namespace MeetingRoomBooking.Tests
             bool result = BookingOverlapHelper.IsOverlapping(existingBooking, newBooking);
             Assert.True(result);
     }
+
     }
 }

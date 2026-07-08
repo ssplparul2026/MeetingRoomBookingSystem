@@ -6,6 +6,7 @@ namespace MeetingRoomBooking.Helpers
     {
         public static bool IsOverlapping(Booking existingBooking, Booking newBooking)
         {
+            
             return newBooking.StartTime < existingBooking.EndTime && newBooking.EndTime > existingBooking.StartTime;
         }
     }
