@@ -26,7 +26,7 @@
             <td>@item.Location</td>
             <td>
                 @* <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> | *@
-                    <a asp-controller="Room" asp-action="Details" asp-route-roomId="@item.Id" class="btn btn-info">Details</a>
+                    <a asp-controller="Room" asp-action="Details" asp-route-roomId="@item.Id" class="btn btn-info">See Bookings</a>
                     <a asp-controller="Room" asp-action="Delete" asp-route-roomId="@item.Id" class="btn btn-danger">Delete</a>
                     <a asp-controller="Booking" asp-action="Create" asp-route-roomId="@item.Id" class="btn btn-success">Book Now</a>
 

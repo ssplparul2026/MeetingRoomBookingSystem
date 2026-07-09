@@ -1,0 +1,29 @@
+﻿@model MeetingRoomBooking.ViewModels.MyBookingsViewModel
+@{
+    ViewData["Title"] = "Cancel Booking Page";
+}
+<h2 class="mb-3 text-danger">Cancel Booking</h2>
+<div class="border rounded p-3 mb-4">
+
+    <h4>Booking Details</h4>
+    <hr />
+
+    <p><strong>Room:</strong> @Model.RoomName</p>
+    <p><strong>Booked By:</strong> @Model.BookedBy</p>
+    <p><strong>Date:</strong> @Model.BookingDate</p>
+    <p><strong>Start Time:</strong> @Model.StartTime</p>
+    <p><strong>End Time:</strong> @Model.EndTime</p>
+    <p><strong>Purpose:</strong> @Model.Purpose</p>
+
+    <div class="alert alert-warning mt-3">
+        Are you sure you want to cancel this booking?
+    </div>
+    
+    <form asp-action="Cancel" method="post">
+        <input type="hidden" asp-for="BookingId" />
+
+        <button type="submit" class="btn btn-danger">Yes, Cancel Booking</button>
+
+        <a asp-action="MyBookings" class="btn btn-secondary">Back</a>
+    </form>
+    </div>

@@ -65,6 +65,7 @@ namespace MeetingRoomBooking.Controllers
                 {
                     return NotFound();
                 }
+                Console.WriteLine(date);
                 DateOnly selectedDate = date ?? DateOnly.FromDateTime(DateTime.Today);
                 var bookings = await _roomService.GetRoomBooking(roomId, selectedDate);
                 var model = new RoomBookingViewModel

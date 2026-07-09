@@ -19,12 +19,11 @@
     <input type="text" id="bookingDate" name="date" value="@Model.SelectedDate.ToString("yyyy-MM-dd")"
            class="form-control" style="width:250px; display:inline-block;" />
 
-        <button type="submit" class="btn btn-primary showBookingDetails">View Bookings</button>
+        <button type="submit" class="btn btn-primary">View Bookings</button>
 
 </form>
 </div>
 
-<div class="BookingDetails" style="display: none;">
 
 
 <h4 style="text-align:center;">Bookings</h4>
@@ -62,7 +61,6 @@
         }
     </tbody>
 </table>
-</div>
 
 @section Scripts
 {

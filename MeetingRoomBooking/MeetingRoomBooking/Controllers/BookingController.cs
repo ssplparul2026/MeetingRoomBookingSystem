@@ -1,5 +1,6 @@
 ﻿using MeetingRoomBooking.Models;
 using MeetingRoomBooking.Services.Interfaces;
+using MeetingRoomBooking.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeetingRoomBooking.Controllers
@@ -15,48 +16,72 @@ namespace MeetingRoomBooking.Controllers
         }
       
         [HttpGet]
-        public async Task<IActionResult> Create()
+        public async Task<IActionResult> Create(int? roomId)
         {
             try
             {
-                ViewBag.Rooms = await _roomService.GetAllRooms();
-                return View(new Booking
+                var rooms  = await _roomService.GetAllRooms();
+                return View(new BookingViewModel
                 {
-                    BookingDate = DateOnly.FromDateTime(DateTime.Today)
+                    BookingDate = DateOnly.FromDateTime(DateTime.Today),
+                    Rooms = rooms,
+                    RoomId = roomId ?? 0
+
                 });
             }
             catch (Exception)
             {
                 ModelState.AddModelError("", "Unable to load booking page");
-                ViewBag.Rooms = new List<Room>();
-                return View();
+                return View(new BookingViewModel
+                {
+                    BookingDate = DateOnly.FromDateTime(DateTime.Today),
+                    Rooms = new List<RoomViewModel>()
+                });
             }
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateBooking(Booking booking)
+        public async Task<IActionResult> CreateBooking(BookingViewModel model)
         {
             try
             {
                 if (!ModelState.IsValid)
                 {
-                    ViewBag.Rooms = await _roomService.GetAllRooms();
-                    return View(booking);
+                    model.Rooms = await _roomService.GetAllRooms();
+                    return View("Create",model);
                 }
+                var booking = new Booking
+                {
+                    RoomId = model.RoomId,
+                    BookedBy = model.BookedBy,
+                    BookingDate = model.BookingDate,
+                    StartTime = model.StartTime,
+                    EndTime = model.EndTime,
+                    Purpose = model.Purpose
+                };
+
                 var result = await _bookingService.CreateBooking(booking);
                 if (!result.Success)
                 {
-                    ModelState.AddModelError("", result.message);
-                    ViewBag.Rooms = await _roomService.GetAllRooms();
-                    return View(booking);
+                    var messages = result.message.Split(Environment.NewLine);
+
+                    foreach (var message in messages)
+                    {
+                        ModelState.AddModelError("", message);
+                    }
+                    model.Rooms = await _roomService.GetAllRooms();
+                    return View("Create", model);
                 }
-                return RedirectToAction("Index", "Room");
+                return RedirectToAction("MyBookings", "Booking", new
+                {
+                    bookedBy = booking.BookedBy
+                });
             }
             catch (Exception)
             {
                 ModelState.AddModelError("", "Unable to create booking");
                 ViewBag.Rooms = await _roomService.GetAllRooms();
-                return View(booking);
+                return View("Create", model);
             }
         }
         [HttpGet]
@@ -85,7 +110,7 @@ namespace MeetingRoomBooking.Controllers
                 {
                     ModelState.AddModelError("", "bookedBy field is required");
 
-                    return View(new List<Booking>());
+                    return View(new List<MyBookingsViewModel>());
                 }
                 var myBookings = await _bookingService.GetMyBookings(bookedBy);
                 return View(myBookings);
@@ -94,8 +119,20 @@ namespace MeetingRoomBooking.Controllers
             {
                 ModelState.AddModelError("", "Unable to load your bookings.");
 
-                return View(new List<Booking>());
+                return View(new List<MyBookingsViewModel>());
             }
+        }
+        [HttpGet]
+        public async Task<IActionResult> CancelBooking(int bookingId)
+        {
+            var booking = await _bookingService.GetBookingById(bookingId);
+
+            if (booking == null)
+            {
+                return NotFound();
+            }
+
+            return View(booking);
         }
         [HttpPost]
         public async Task<IActionResult> Cancel(int bookingId)
@@ -107,7 +144,7 @@ namespace MeetingRoomBooking.Controllers
                 {
                     ModelState.AddModelError("", "booking not found");
                 }
-                return RedirectToAction("Index", "Booking");
+                return RedirectToAction("MyBookings", "Booking");
             }
             catch (Exception)
             {

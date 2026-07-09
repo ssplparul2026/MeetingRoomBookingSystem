@@ -57,8 +57,8 @@ namespace MeetingRoomBooking.Tests
             };
             var newBooking = new Booking
             {
-                StartTime = new TimeOnly(10, 15),
-                EndTime = new TimeOnly(11, 15)
+                StartTime = new TimeOnly(10, 0),
+                EndTime = new TimeOnly(11, 0)
             };
             bool result = BookingOverlapHelper.IsOverlapping(existingBooking, newBooking);
             Assert.True(result);

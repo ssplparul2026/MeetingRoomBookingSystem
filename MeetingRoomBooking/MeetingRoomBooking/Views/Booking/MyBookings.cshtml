@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MeetingRoomBooking.ViewModels.MyBookingsViewModel>
+@{
+    ViewData["Title"] = "My Bookings Page";
+}
+<h2 class="mb-3" style="text-align:center;">My Bookings</h2>
+<form asp-action="MyBookings" asp-controller="Booking" method="get" class="mb-3">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-4">
+            <input type="text" name="bookedBy" class="form-control"  placeholder="Enter your name" />
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary"> View My Bookings </button>
+        </div>
+    </div>
+</form>
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No bookings found.</div>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Room Name</th>
+                <th>Booking Date</th>
+                <th>Booked By</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Purpose</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var booking in Model)
+            {
+                <tr>
+                    <td>@booking.RoomName</td>
+                    <td>@booking.BookingDate</td>
+                    <td>@booking.BookedBy</td>
+                    <td>@booking.StartTime</td>
+                    <td>@booking.EndTime</td>
+                    <td>@booking.Purpose</td>
+                    <td>@booking.Status</td>
+                    <td>
+                        @if (booking.Status == MeetingRoomBooking.Enum.BookingStatus.Active)
+                        {
+                            <a asp-controller="Booking" asp-action="CancelBooking" asp-route-bookingId="@booking.BookingId" class="btn btn-danger">Cancel</a>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Cancelled</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<div class="mt-3">
+    <a asp-controller="Room" asp-action="Index" class="btn btn-secondary">Back to Rooms </a>
+</div>

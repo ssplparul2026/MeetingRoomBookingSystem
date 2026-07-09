@@ -7,8 +7,14 @@ $(document).ready(function () {
         $("#bookingDate").datepicker({
             dateFormat: "yy-mm-dd"
         });
-    $(".showBookingDetails").on('click', function (e) {
-        e.preventDefault();
-        $('.BookingDetails').show();
-    })
+    // $(".showBookingDetails").on('click', function (e) {
+    //     $('.BookingDetails').show();
+    // })
+    $("#createBookingDate").datepicker({
+        dateFormat: "yy-mm-dd",
+        minDate: 0
+    });
+    $("#BookingByDate").datepicker({
+        dateFormat: "yy-mm-dd"
+    });
 })

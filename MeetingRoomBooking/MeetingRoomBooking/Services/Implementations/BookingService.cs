@@ -3,6 +3,8 @@ using MeetingRoomBooking.Enum;
 using MeetingRoomBooking.Helpers;
 using MeetingRoomBooking.Models;
 using MeetingRoomBooking.Services.Interfaces;
+using MeetingRoomBooking.ViewModels;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace MeetingRoomBooking.Services.Implementations
@@ -15,11 +17,11 @@ namespace MeetingRoomBooking.Services.Implementations
             _appDbContext = appDbContext;
         }
         
-        public async Task<Booking?> HasConflict(Booking booking)
+        public async Task<List<Booking>> HasConflict(Booking booking)
         {
             var bookings = await _appDbContext.Bookings.Where(x => x.RoomId == booking.RoomId && x.BookingDate == booking.BookingDate
                 && x.Status == BookingStatus.Active) .ToListAsync();
-            return bookings.FirstOrDefault(x => BookingOverlapHelper.IsOverlapping(x, booking));
+            return bookings.Where(x => BookingOverlapHelper.IsOverlapping(x, booking)).ToList();
         }
                 
        
@@ -30,10 +32,14 @@ namespace MeetingRoomBooking.Services.Implementations
                 return (false , "End time should be greater than the start time");
             }
             var conflict = await HasConflict(booking);
-            if (conflict != null)
+            if (conflict.Any())
             {
-                string message = $"Room is already booked from {conflict.StartTime} to {conflict.EndTime} by {conflict.BookedBy}";
-                return (false,message);
+                string message = "";
+                foreach (var item in conflict)
+                {
+                    message += $"Room is already booked from {item.StartTime} to {item.EndTime} by {item.BookedBy}"+Environment.NewLine;
+                }
+                return (false, message);
             }
             _appDbContext.Bookings.Add(booking);
             await _appDbContext.SaveChangesAsync();
@@ -44,10 +50,20 @@ namespace MeetingRoomBooking.Services.Implementations
             return await _appDbContext.Bookings.Include(x => x.Room)
                 .Where(x => x.BookingDate == date).OrderBy(x => x.StartTime).ToListAsync();
         }
-        public async Task<List<Booking>> GetMyBookings(string bookedBy)
+        public async Task<List<MyBookingsViewModel>> GetMyBookings(string bookedBy)
         {
             return await _appDbContext.Bookings.Include(x => x.Room)
-                .Where(x => x.BookedBy == bookedBy).OrderBy(x => x.BookingDate).ToListAsync();
+                .Where(x => x.BookedBy == bookedBy).OrderBy(x => x.BookingDate).Select(x => new MyBookingsViewModel
+                {
+                    BookingId = x.Id,
+                    RoomName = x.Room != null ? x.Room.Name : "",
+                    BookedBy = x.BookedBy,
+                    BookingDate = x.BookingDate,
+                    StartTime = x.StartTime,
+                    EndTime = x.EndTime,
+                    Purpose = x.Purpose,
+                    Status = x.Status,
+                }).ToListAsync();
         }
         public async Task<bool> CancelBooking(int bookingId)
         {
@@ -61,7 +77,20 @@ namespace MeetingRoomBooking.Services.Implementations
             await _appDbContext.SaveChangesAsync();
             return true;
         }
-
+        public async Task<MyBookingsViewModel?> GetBookingById(int bookingId)
+        {
+            return await _appDbContext.Bookings.Include(x => x.Room).Where(x => x.Id == bookingId).Select(x => new MyBookingsViewModel
+            {
+                BookingId = x.Id,
+                RoomName = x.Room != null ? x.Room.Name : "",
+                BookedBy = x.BookedBy,
+                BookingDate = x.BookingDate,
+                StartTime = x.StartTime,
+                EndTime = x.EndTime,
+                Purpose = x.Purpose,
+                Status = x.Status,
+            }).FirstOrDefaultAsync();
+        }
     }
 
     }

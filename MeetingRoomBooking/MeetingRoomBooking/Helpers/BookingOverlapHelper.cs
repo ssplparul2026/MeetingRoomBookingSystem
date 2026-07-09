@@ -1,4 +1,5 @@
 ﻿using MeetingRoomBooking.Models;
+using MeetingRoomBooking.ViewModels;
 
 namespace MeetingRoomBooking.Helpers
 {

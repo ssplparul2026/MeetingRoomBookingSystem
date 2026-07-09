@@ -1,0 +1,54 @@
+﻿@model MeetingRoomBooking.ViewModels.BookingViewModel
+@{
+    ViewData["Title"] = "Create Booking";
+}
+<h2 class="mb-3">Create Booking</h2>
+
+<form asp-controller="Booking" asp-action="CreateBooking" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="RoomId" class="form-label">Room</label>
+        <select asp-for="RoomId" class="form-select">
+            <option value="">Select Room</option>
+            @foreach(var room in Model.Rooms)
+                    {
+                        <option value="@room.Id">@room.Name</option>
+                    }
+                </select>
+        <span asp-validation-for="RoomId" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="BookedBy" class="form-label"></label>
+        <input asp-for="BookedBy" class="form-control" />
+        <span asp-validation-for="BookedBy" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        
+            <label asp-for="BookingDate" class="form-label"></label>
+
+            <input asp-for="BookingDate" type="text" id="createBookingDate" class="form-control" />
+            <span asp-validation-for="BookingDate" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="StartTime" class="form-label"></label>
+        <input asp-for="StartTime" type="time" class="form-control" />
+        <span asp-validation-for="StartTime" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="EndTime" class="form-label"></label>
+        <input asp-for="EndTime" type="time" class="form-control" />
+        <span asp-validation-for="EndTime" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Purpose" class="form-label"></label>
+        <input asp-for="Purpose" class="form-control" />
+        <span asp-validation-for="Purpose" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Create Booking</button>
+    <a asp-controller="Room" asp-action="Index"  class="btn btn-secondary">Cancel</a>
+</form>
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/site.js"></script>
+}
